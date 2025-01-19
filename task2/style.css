@@ -1,0 +1,33 @@
+#carousel {
+    display: flex;
+    transition: transform 0s ease-in-out;
+}
+.carousel-item {
+    flex: 0 0 calc(100% / 6); /* 6 là số lượng phần tử con */
+    padding: 2px;
+    transition: transform 0s ease-in-out;
+}
+button {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    padding: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+button:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-50%) scale(1.1);
+}
+#prev {
+    left: 1;
+}
+#next {
+    right: 1;
+}
