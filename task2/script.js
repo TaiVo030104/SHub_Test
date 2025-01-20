@@ -6,10 +6,10 @@ const totalItems = items.length;
 
 document.getElementById('next').addEventListener('click', () => {
     index = (index + 1) % totalItems;
-    carousel.appendChild(carousel.firstElementChild); // Move first item to the end
+    carousel.appendChild(carousel.firstElementChild); 
 });
 
 document.getElementById('prev').addEventListener('click', () => {
     index = (index - 1 + totalItems) % totalItems;
-    carousel.prepend(carousel.lastElementChild); // Move last item to the front
+    carousel.prepend(carousel.lastElementChild); 
 });
